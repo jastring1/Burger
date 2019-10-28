@@ -1,0 +1,31 @@
+
+<div class="container">
+    <div>
+        <img src="../public/assets/img/burger.jpg" alt="burger">
+    </div>
+    <div class="lists">
+        <ul id="burgers">
+            {{#each burgers}}
+                {{#unless devoured}}
+                    {{> block}}
+                {{/unless}}
+            {{/each}}
+        </ul>
+    </div>
+    <div class="lists">
+        <ul id="eaten">
+            {{#each burgers}}
+                {{#if devoured}}
+                    {{> block}}
+                {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+    <div>
+        <textarea name="" id="name" cols="25" rows="2"></textarea>
+    </div>
+    <div>
+        <button id="new">Submit</button>
+        <p>Add a burger that you want to eat!</p>
+    </div>
+</div>
