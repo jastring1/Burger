@@ -26,7 +26,7 @@ function eatBurger() {
         }
     );
 }
-$("#new").on("click", newBurger)
-$(".eatBurger").on("click", eatBurger)
-//$(document).on("click", "#new", newBurger);
-//$(document).on("click", ".eatBurger", eatBurger);  
+//$("#new").on("click", newBurger)
+//$(".eatBurger").on("click", eatBurger)
+$(document).on("click", "#new", newBurger);
+$(document).on("click", ".eatBurger", eatBurger);  
